@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务四：定位和居中问题</title>
+	<!-- 第一种情况，margin负值法 -->
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#main{
+			width: 400px;
+			height: 200px;
+			position: absolute;
+			background: #ccc;
+			margin-left: -200px;
+			left: 50%;
+			margin-top: -100px;
+			top: 50%;
+			overflow: hidden;
+		}
+		#main .circle{
+			width: 100px;
+			height: 100px;
+			background: #fc0;
+			border-radius: 100%;
+		}
+		#main .left-top{
+			margin-top: -50px;
+			margin-left: -50px;
+		}
+		#main .right-bottom{
+			margin-top: 100px;
+			margin-left: 350px;
+		}
+	</style>
+</head>
+<!-- 任务四：定位和居中问题 -->
+<body>
+	<div id="main">
+		<div class="left-top circle"></div>
+		<div class="right-bottom circle"></div>
+	</div>
+</body>
+</html>
